@@ -1,0 +1,1 @@
+delete a,b,c,d FROM pra101_posts a LEFT JOIN pra101_term_relationships b ON ( a.ID = b.object_id ) LEFT JOIN pra101_postmeta c ON ( a.ID = c.post_id ) LEFT JOIN pra101_term_taxonomy d ON ( d.term_taxonomy_id = b.term_taxonomy_id ) LEFT JOIN pra101_terms e ON ( e.term_id = d.term_id ) WHERE a.post_status = 'trash' 
